@@ -1,0 +1,41 @@
+body {
+    width: 250px;
+    margin: auto;
+}
+
+h4 {
+    text-align: center;
+}
+
+select {
+    background: #dfe9ea;
+    border-radius: 5px;
+}
+
+hr {
+    border: 1px dotted;
+}
+
+.select_container {
+    width: 250px;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+label {
+    font-weight: normal;
+    width: 40%;
+    text-transform: none;
+}
+
+.btn_container {
+    width: 250px;
+    padding: 10px;
+}
+
+.btn_container button {
+    border-radius: 0;
+    margin: 3px;
+    float: right;
+}
