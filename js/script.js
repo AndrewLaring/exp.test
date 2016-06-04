@@ -1,4 +1,5 @@
 $('select').change(function () {
+    select = $(this);
     next_select = $(this).next().next().next();
     id_field = $(this).attr('id');
     query_id = $(this).find('option:selected').attr('data-query_id');
@@ -9,7 +10,7 @@ $('select').change(function () {
             id_field: id_field,
             query_id: query_id},
         success: function (e) {
-            $(next_select).html('<option></option>');
+            $(select).nextAll('select').html('<option></option>');
             option = $.parseJSON(e);
             $.each(option, function (key, val) {
                 console.log(query_id);
